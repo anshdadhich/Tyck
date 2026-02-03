@@ -49,7 +49,6 @@ Changelog = "https://github.com/anshdadhich/tyck/blob/main/CHANGELOG.md"
 
 [tool.hatch.build.targets.wheel]
 packages = ["tyck"]
-sources = ["."]
 
 [tool.black]
 line-length = 100
