@@ -12,7 +12,7 @@ requires-python = ">=3.8"
 authors = [
     {name = "Ansh Dadhich", email = "anshdadhichmm@gmail.com"}
 ]
-keywords = ["validation", "pydantic", "schema", "types", "typescript", "fluent"]
+keywords = ["validation", "pydantic", "schema", "types", "typescript"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
