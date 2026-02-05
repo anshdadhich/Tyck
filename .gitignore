@@ -83,7 +83,5 @@ dmypy.json
 
 _internal/
 
-PUBLISH.md
-py.typed
 test_bugfixes.py
 verify_installation.py
