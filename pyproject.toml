@@ -1,0 +1,66 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tyck"
+version = "0.1.0"
+description = "TypeScript-inspired fluent API for Pydantic validation"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Ansh Dadhich", email = "anshdadhichmm@gmail.com"}
+]
+keywords = ["validation", "pydantic", "schema", "types", "typescript", "fluent"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = [
+    "pydantic>=2.0.0",
+    "typing-extensions>=4.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=23.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/anshdadhich/tyck"
+Documentation = "https://github.com/anshdadhich/tyck#readme"
+Repository = "https://github.com/anshdadhich/tyck"
+Issues = "https://github.com/anshdadhich/tyck/issues"
+Changelog = "https://github.com/anshdadhich/tyck/blob/main/CHANGELOG.md"
+
+[tool.hatch.build.targets.wheel]
+packages = ["tyck"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311', 'py312']
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+select = ["E", "F", "I", "W"]
+
+[tool.mypy]
+python_version = "3.8"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
